@@ -1,19 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-body {
+html {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: black;
-  background-image:url('https://pro2-bar-s3-cdn-cf1.myportfolio.com/aea485e98f54bacdbe4868df307e5980/93663200-8230-45a7-9bc9-976ade253d05_rw_1920.gif?h=a5f35efc7aeaa6fa8706bb910ca81d9f');
-  background-size:100%;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
-  height:100%;
 }
 
 .scrollbar {
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow-y: hidden;
+  overflow-x: scroll;
   width: 10;
   height: 10;
   color: white;
@@ -38,7 +33,17 @@ body {
 
 /*--------------------------------------*/
 
-.header {
+.con_start img{
+  background-size: 100%;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  width: 100%;
+  height: 700px;
+  transform: scaleX(-1);
+  margin: -8px;
+}
+
+.title {
   background-color: transparent;
   text-align: center;
   position: fixed;
