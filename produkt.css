@@ -5,6 +5,7 @@ html {
   font-size: 16px;
   color: black;
   background-color: white;
+  height:100%;
 }
 
 .scrollbar {
@@ -32,63 +33,6 @@ html {
   transition: 0.5s;
 }
 
-/*-------------------------------------*/
-
-.portfolio {
-  background-color: transparent;
-  margin: -8px -8px  0px -8px;
-}
-
-.portfolio-item {
-  float: left;
-  width: 33.33%;
-  height: 360px;
-  background-color: transparent;
-  align-items: center;
-}
-
-.portfolio-item img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.po-links {
-  width: 100%;
-  position: absolute;
-}
-
-.po-item {
-  text-align: center;
-  float: left;
-  width: 33.3%;
-  height: 360px;
-}
-
-.po-item:hover {
-  transition: all 0.35s;
-  backdrop-filter: blur(16px);
-}
-
-.po-item li {
-  font-weight: bold;
-  list-style: none;
-  padding-top: 170px;
-  font-size: 22px;
-  object-fit: cover;
-}
-
-.po-item a {
-  text-decoration: none;
-  color: black;
-}
-
-.po-item a:hover{
-  color: #3f00ff;
-  letter-spacing: 4px;
-  transition: all 0.35s;
-}
-
 /*--------------------------------------*/
 
 .header {
@@ -112,7 +56,7 @@ html {
 /*-------------------------------------*/
 
 .footer {
-  background-color: white;
+    background-color: white;
 }
 
 .footer_nav {
@@ -139,6 +83,6 @@ html {
 }
 
 .footer_nav a:hover{
-  color: #3f00ff;
-  transition: all 0.35s;
-}
+    color: #3f00ff;
+    transition: all 0.35s;
+  }
