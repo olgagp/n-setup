@@ -1,0 +1,178 @@
+@import "/tokens.css";
+
+.con-desc {
+  height: 100%;
+  width: 1000px;
+  margin: 160px auto 0px auto;
+  padding: 130px 10px 100px 10px;
+  z-index: -1;
+}
+  
+.con-greet {
+  display: flex;
+}
+  
+.greet {
+  margin: var(--units-sta);
+  height: 450px;
+  width: 230px;
+  background-color: white;
+}
+  
+.greet h1 {
+  text-align: center;
+  font-size: var(--font-size-6);
+  letter-spacing: 5px;
+  color: var(--font-color);
+  border-bottom: 1px solid var(--color-accent-1);
+  animation-name: g-h1;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  margin-top: 0px;
+}
+  
+@keyframes g-h1 {
+  0%   {color: var(--font-color);}
+  25%  {color: var(--color-accent-1);}
+  50%  {color: var(--font-color);}
+  75% {color: var(--color-accent-1);}
+  100% {color: var(--font-color);}
+}
+  
+.greet h2 {
+  font-size: var(--font-size-5);
+  text-align: right;
+  color: var(--color-accent-1);
+  margin-top: -30px;
+}
+  
+.greet h3 {
+  font-size: var(--font-size-3);
+  text-align: left;
+  margin-top: -30px;
+}
+  
+.greet img {
+  width: 170px;
+  height: 170px;
+  padding: 20px;
+  display: block;
+  margin: -30px auto 0px auto;
+  object-fit: cover;
+}
+  
+.intro-box {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+  margin: 10px 10px 10px 60px;
+  padding: var(--units-sta) var(--units-sta) var(--units-sta) 40px;
+  border-left: 1px solid black;
+}
+
+.intro-box p {
+  font-size: var(--font-size-st);
+  font-weight: bold;
+}
+
+.ext-box {
+  background-color: white;
+  width: 960px;
+  height: 100%;
+  margin: 90px auto 10px auto;
+  padding: var(--units-xs) var(--units-sta);
+  text-align: center;
+}
+
+.ext-box p {
+  font-size: var(--font-size-st);
+  font-weight: bold;
+}
+
+/*----------------------------------------*/
+  
+.more-buttons {
+  margin: var(--units-l) auto;
+  height: 100%;
+  width: 800px;
+  display: flex;
+}
+
+.more-buttons p{
+  font-size: --units-;
+}
+  
+.projekte-button { 
+  background-color: white;
+  margin: 10px auto;
+  padding: var(--units-xs);
+  height: 40px;
+  width: 200px;
+  border: 1px solid var(--color-accent-1);
+  border-radius: 15px 30px;
+  position: relative;
+  text-align: center;
+}
+  
+.projekte-button:hover {
+  background-color: var(--color-accent-1);
+  color: white;
+  transition: all 0.5s;
+}
+  
+.projekte-button li {
+  list-style: none;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+.projekte-button a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+  
+.projekte-button a:hover {
+  color: white;
+  transition: all 0.35s;
+}
+  
+.kontakt-button {
+  background-color: white;
+  margin: 10px auto;
+  padding: var(--units-xs);
+  height: 40px;
+  width: 200px;
+  border: 1px solid var(--color-accent-1);
+  border-radius: 30px 15px;
+  position: relative;
+  text-align: center;
+}
+  
+.kontakt-button:hover {
+  background-color: var(--color-accent-1);
+  transition: all 0.5s;
+}
+  
+.kontakt-button li {
+  list-style: none;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+.kontakt-button a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+  
+.kontakt-button a:hover {
+  color: white;
+  transition: all 0.35s;
+}

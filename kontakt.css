@@ -1,23 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import "/tokens.css";
 
 html {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  color: black;
-  background-color: white;
-  height:100%;
+  font-family: var(--font-family);
+  font-size: var(--font-size-1);
+  color: var(--font-color);
 }
 
 .scrollbar {
-  overflow-y: auto;
-  overflow-x: hidden;
-  width: 10;
-  height: 10;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: var(--units-sta);
+  height: var(--units-sta);
   color: white;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: var(--units-sta);
 }
 
 ::-webkit-scrollbar-track {
@@ -29,18 +27,16 @@ html {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--color-accent-2);
   transition: 0.5s;
 }
 
 /*--------------------------------------*/
 
 .header {
-  background-color: transparent;
   padding: 4px;
   margin: 4px;
   text-align: center;
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -50,13 +46,52 @@ html {
   
 .logo {
   font-weight: bold;
-  font-size: 13px;
+  font-size: var(--font-size-st);
+}
+
+/*--------------------------------------*/
+
+.socials {
+  margin-left: 10px;
+  width: 40px;
+  height: 170px;
+  position: fixed;
+  z-index: 2;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.socials img {
+  object-fit: cover;
+  height: 20px;
+  width: 20px;
+  padding: 6px 0px;
+}
+
+.socials li {
+  list-style: none;
+}
+
+.socials a {
+  text-decoration: none;
+  color: var(--font-color);
 }
 
 /*-------------------------------------*/
 
+.container {
+  background-color: grey;
+  z-index: -1;
+  width: 1000px;
+  height: 500px;
+  margin: 100px auto;
+  padding: var(--units-sta);
+}
+
+/*---------------------------------------*/
+
 .footer {
-    background-color: white;
+  background-color: transparent;
 }
 
 .footer_nav {
@@ -71,7 +106,7 @@ html {
 }
 
 .footer_nav li {
-  display:inline-block;
+  display: inline-block;
   list-style: none;
   padding: 0 36px;
   font-size: 12px;
@@ -79,10 +114,10 @@ html {
 
 .footer_nav a {
   text-decoration: none;
-  color: black;
+  color: var(--font-color);
 }
 
 .footer_nav a:hover{
-    color: #3f00ff;
-    transition: all 0.35s;
-  }
+  color: var(--color-accent-1);
+  transition: all 0.35s;
+}
