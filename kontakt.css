@@ -123,10 +123,11 @@ html {
   position: relative;
 }
 
-input[type=text], textarea {
+input[type=text] {
   font-family: var(--font-family);
   font-size: 10px;
   width: 350px;
+  max-width: 350px;
   padding: var(--units-sta) 5px;
   height: 100%;
   border: none;
@@ -135,8 +136,24 @@ input[type=text], textarea {
   outline: none;
 }
 
+textarea {
+  font-family: var(--font-family);
+  font-size: 10px;
+  width: 350px;
+  max-width: 350px;
+  min-width: 350px;
+  padding: var(--units-sta) 5px;
+  height: 120px;
+  max-height: 120px;
+  min-height: 120px;
+  border: none;
+  border-bottom: 0.5px solid black;
+  margin: var(--units-sta);
+  outline: none;
+}
+
 input[type=submit] {
-  background-color: var(--color-background);
+  background-color: #f0f0f0;
   font-family: var(--font-family);
   font-size: 12px;
   font-weight: bold;
