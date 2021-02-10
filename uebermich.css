@@ -71,7 +71,7 @@
 }
 
 .intro-box p {
-  font-size: var(--font-size-st);
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .ext-box p {
-  font-size: var(--font-size-st);
+  font-size: 12px;
   font-weight: bold;
 }
 

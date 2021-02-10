@@ -80,6 +80,30 @@ html {
 
 /*-------------------------------------*/
 
+.con-ex {
+  background-color: gray;
+  width: 1000px;
+  height: 300px;
+}
+/*
+.pics {
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform: rotate(-90deg);
+  transform-origin: right top;
+}
+
+.pics img {
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+  transform: rotate(90deg);
+  transform-origin: right top;
+} */
+
+/*---------------------------------------*/
+
 .footer {
   background-color: transparent;
 }
